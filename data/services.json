@@ -1,0 +1,109 @@
+{
+  "version": "2026-05",
+  "services": [
+    {
+      "brand": "Toyota",
+      "model": "Camry",
+      "year": 2021,
+      "service": "Замена масла",
+      "service_group": "ТО",
+      "synonyms": ["масло", "моторное масло", "масляный фильтр"],
+      "price": 3500,
+      "duration_min": 40,
+      "comment": "Масло не включено",
+      "status": "active",
+      "updated_at": "2026-05"
+    },
+    {
+      "brand": "Toyota",
+      "model": "Camry",
+      "year": 2021,
+      "service": "Диагностика подвески",
+      "service_group": "Диагностика",
+      "synonyms": ["ходовая", "стук", "подвеска"],
+      "price": 1800,
+      "duration_min": 45,
+      "comment": "",
+      "status": "check",
+      "updated_at": "2026-05"
+    },
+    {
+      "brand": "Toyota",
+      "model": "Camry",
+      "year": 2020,
+      "service": "Замена передних тормозных колодок",
+      "service_group": "Тормоза",
+      "synonyms": ["колодки", "тормоза", "передние колодки"],
+      "price": 2600,
+      "duration_min": 50,
+      "comment": "Запчасти отдельно",
+      "status": "active",
+      "updated_at": "2026-05"
+    },
+    {
+      "brand": "Toyota",
+      "model": "RAV4",
+      "year": 2022,
+      "service": "Замена масла",
+      "service_group": "ТО",
+      "synonyms": ["масло", "моторное масло"],
+      "price": 3900,
+      "duration_min": 45,
+      "comment": "Масло не включено",
+      "status": "active",
+      "updated_at": "2026-05"
+    },
+    {
+      "brand": "Hyundai",
+      "model": "Solaris",
+      "year": 2020,
+      "service": "Замена масла",
+      "service_group": "ТО",
+      "synonyms": ["масло", "моторное масло"],
+      "price": 2900,
+      "duration_min": 35,
+      "comment": "Масло не включено",
+      "status": "active",
+      "updated_at": "2026-05"
+    },
+    {
+      "brand": "Hyundai",
+      "model": "Solaris",
+      "year": 2020,
+      "service": "Компьютерная диагностика",
+      "service_group": "Диагностика",
+      "synonyms": ["диагностика", "ошибки", "чек"],
+      "price": 2000,
+      "duration_min": 30,
+      "comment": "",
+      "status": "active",
+      "updated_at": "2026-05"
+    },
+    {
+      "brand": "Kia",
+      "model": "Rio",
+      "year": 2019,
+      "service": "Замена аккумулятора",
+      "service_group": "Электрика",
+      "synonyms": ["акб", "батарея", "аккумулятор"],
+      "price": 1200,
+      "duration_min": 25,
+      "comment": "Цена за работу",
+      "status": "active",
+      "updated_at": "2026-05"
+    },
+    {
+      "brand": "Kia",
+      "model": "Rio",
+      "year": 2019,
+      "service": "Сход-развал",
+      "service_group": "Подвеска",
+      "synonyms": ["развал", "схождение", "геометрия"],
+      "price": 2800,
+      "duration_min": 60,
+      "comment": "Проверить состояние подвески",
+      "status": "check",
+      "updated_at": "2026-05"
+    }
+  ]
+}

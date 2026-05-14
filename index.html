@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Калькулятор работ автосервиса</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div class="brand-mark" aria-hidden="true">⚙</div>
+        <div>
+          <h1>Калькулятор работ автосервиса</h1>
+          <p id="dataVersion">Данные загружаются</p>
+        </div>
+      </header>
+
+      <section class="workbench" aria-label="Калькулятор стоимости работ">
+        <section class="panel controls-panel" aria-label="Выбор автомобиля и работы">
+          <div class="section-title">
+            <span>Автомобиль</span>
+          </div>
+
+          <div class="field-grid">
+            <label>
+              <span>Марка</span>
+              <select id="brandSelect">
+                <option value="">Выберите марку</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Модель</span>
+              <select id="modelSelect" disabled>
+                <option value="">Сначала марка</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Год</span>
+              <select id="yearSelect" disabled>
+                <option value="">Сначала модель</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="section-title service-heading">
+            <span>Работа</span>
+          </div>
+
+          <label class="search-label">
+            <span>Поиск услуги</span>
+            <input id="serviceSearch" type="search" placeholder="масло, колодки, диагностика" autocomplete="off">
+          </label>
+
+          <div class="quick-actions" id="quickActions" aria-label="Популярные работы"></div>
+
+          <label>
+            <span>Услуга</span>
+            <select id="serviceSelect" disabled>
+              <option value="">Выберите автомобиль</option>
+            </select>
+          </label>
+
+          <button id="addServiceButton" class="add-service-button" type="button" disabled>
+            Добавить работу
+          </button>
+        </section>
+
+        <section class="panel result-panel" aria-live="polite">
+          <div id="emptyState" class="state-box">
+            <div class="state-icon" aria-hidden="true">⌕</div>
+            <h2>Добавьте одну или несколько работ</h2>
+            <p>Смета появится после добавления первой услуги.</p>
+          </div>
+
+          <div id="resultState" class="estimate-card hidden">
+            <div class="result-header">
+              <div>
+                <p class="eyebrow">Смета</p>
+                <h2 id="estimateTitle">Выбрано работ: 0</h2>
+              </div>
+              <span id="statusBadge" class="status-badge">актуально</span>
+            </div>
+
+            <dl class="result-metrics">
+              <div>
+                <dt>Итого стоимость</dt>
+                <dd id="resultPrice">0 ₽</dd>
+              </div>
+              <div>
+                <dt>Итого время</dt>
+                <dd id="resultDuration">0 мин</dd>
+              </div>
+            </dl>
+
+            <div id="estimateItems" class="estimate-items"></div>
+
+            <div id="commentBox" class="comment-box hidden">
+              <span>Требует внимания</span>
+              <p id="resultComment"></p>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="./src/calculator.js"></script>
+    <script src="./src/app.js"></script>
+  </body>
+</html>
