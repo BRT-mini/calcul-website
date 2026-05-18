@@ -1,0 +1,2 @@
+brand,model,year,service,service_group,synonyms,price,duration_min,comment,status,updated_at
+ACURA,MDX (2000-),2014,ДВС масло замена с фильтром,ДВС,"масло; фильтр",2080,39,Демо-строка,check,demo
